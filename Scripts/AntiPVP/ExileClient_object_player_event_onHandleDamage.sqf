@@ -17,7 +17,7 @@ _typeOfProjectile = _this select 4;
 
 if (isPlayer _sourceOfDamage && _sourceOfDamage != _unit) then {
 	hint "Getting attack from a player!";
-	_amountOfDamage = 0;
+	_amountOfDamage = damage _unit;
 };
 
 _amountOfDamage
