@@ -11,7 +11,7 @@
 params ["_unit", "_hit", "_damage", "_source", "_ammo"];
 
 if (isPlayer _source && !(_source isEqualTo player)) then {
-	systemChat format ["Getting attack from %1!", _source];
+	systemChat format ["Getting attack from %1!", name _source];
 	_damage = damage _unit;
 };
 
